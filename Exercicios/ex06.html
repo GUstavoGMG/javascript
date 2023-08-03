@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <p>Aprendendo a usar <strong>DOM</strong> com Javascript.</p>
+    <script>
+        var p1= document.getElementsByTagName('p')[1]
+        document.write('Isto está escrito no primeiro paragrafo:'+p1.innerText)
+      p1.style.color='red'
+      var hh=document.getElementById('h1')
+      var corpo=document.body
+      corpo.style.background='pink'
+      document.write(p1.innerHTML)
+      alert(hh.innerHTML)
+      alert(p1.innerHTML)
+      
+    </script>
+</body>
+</html>
